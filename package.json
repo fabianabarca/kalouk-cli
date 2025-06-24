@@ -1,0 +1,55 @@
+{
+  "name": "@kalouk/cli",
+  "version": "0.0.0",
+  "description": "Command line interface for interacting with Kalouk tools and services",
+  "main": "dist/index.js",
+  "bin": {
+    "kalouk": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianabarca/kalouk-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "kalouk",
+    "data",
+    "pipeline",
+    "api",
+    "query",
+    "typescript",
+    "command-line"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "Fabián Abarca <fabian.abarca@ucr.ac.cr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabianabarca/kalouk-cli/issues"
+  },
+  "homepage": "https://github.com/fabianabarca/kalouk-cli#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "prettier": "^3.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  }
+}

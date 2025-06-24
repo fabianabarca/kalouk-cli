@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.lock
+package-lock.json
+.git/
